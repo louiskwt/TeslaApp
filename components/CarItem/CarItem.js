@@ -14,20 +14,22 @@ function CarItem() {
 				<Text style={styles.title}>Model S</Text>
 				<Text style={styles.subtitle}>Starting at $69,240</Text>
 			</View>
-			<StyledButton
-				type='primary'
-				content={'Custom Order'}
-				onPress={() => {
-					console.warn('Custom Order was pressed');
-				}}
-			/>
-			<StyledButton
-				type='secondary'
-				content={'Existing Inventory'}
-				onPress={() => {
-					console.warn('Existing Investory was pressed');
-				}}
-			/>
+			<View style={styles.buttonContainer}>
+				<StyledButton
+					type='primary'
+					content={'Custom Order'}
+					onPress={() => {
+						console.warn('Custom Order was pressed');
+					}}
+				/>
+				<StyledButton
+					type='secondary'
+					content={'Existing Inventory'}
+					onPress={() => {
+						console.warn('Existing Investory was pressed');
+					}}
+				/>
+			</View>
 		</View>
 	);
 }
