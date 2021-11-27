@@ -11,7 +11,8 @@ function CarsList() {
 		<View style={styles.container}>
 			<FlatList
 				data={cars}
-				renderItem={({ item }) => <CarItem car={item} />}
+				renderItem={({ item, index }) => <CarItem car={item} />}
+				keyExtractor={(item) => item.name}
 				snapToAlignment={'start'}
 				decelerationRate={'fast'}
 				snapToInterval={Dimensions.get('window').height}
